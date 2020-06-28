@@ -25,7 +25,7 @@
         useEffect(() => {
             if (ws) ws.close()
             // ws = new WebSocket(`ws://${window.location.host}/ws`)
-            ws = new WebSocket("wss://weiqiujuan.github.io/deno-chat")
+            ws = new WebSocket("wss://weiqiujuan.github.io/deno-chat/ws")
             console.log(ws)
             ws.addEventListener("message", onReceiveMessage)
             return () => {
